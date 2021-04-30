@@ -1,0 +1,35 @@
+.features {
+    --grid-num: 4;
+  }
+ 
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .features__item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+    
+  .features__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--features-tumb-color);
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+.features__text {
+  font-weight: 400;
+  color: var(--primery-text-color);
+}
+
+.features__card .features__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-bottom: 0px;
+}

@@ -1,0 +1,62 @@
+ /*Logo*/
+  
+    
+ .logo {
+    
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--title-text-color);
+  }
+
+   .logo--accent-color {
+    color: var(--accent-text-color);
+  }
+
+  .logo-footer-container {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  
+  .logo__footer {
+    color: var(--white-color);
+  
+    display: block;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  
+    padding-top: 0;
+    padding-bottom: 15px;
+      
+
+    transition: color var(--animation);
+  }
+   
+  .logo-footer .link{
+    color: #ffffff;
+    
+  }
+
+  .logo__footer:hover,
+  .logo__footer:focus {
+    color: var(--accent-text-color);
+  }
+  
+  .footer .logo-title {
+    margin-bottom: 20px;
+  
+    --text-title-color: var(--white-color);
+  }
+
+  .logo__footer {
+
+    transition: fill var(--animation);
+  }
+  
