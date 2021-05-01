@@ -6,14 +6,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--link-text-contacts);
-  }
+  
 
-.menu__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
    
-  .menu__link {
+  &__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -23,7 +23,7 @@
 }
   
     
-  .menu__link:after {
+  &__link:after {
     content: "";
     position: absolute;
     display: block;
@@ -36,40 +36,38 @@
     transition: background-color var(--animation);
   }
   
-  .menu__link:hover::after,
-  .menu__link:focus::after {
+  &__link:hover::after,
+  &__link:focus::after {
     background-color: var(--accent-text-color);
   }
   
-  .menu__link--current {
+  &__link--current {
     color: var(--accent-text-color);
   
     transition: color var(--animation);
   }
   
-  .menu__link--current:hover,
-  .menu__link--current:focus {
+  &__link--current:hover,
+  &__link--current:focus {
   color: var(--bg-accent-col);
 }
 
-  .menu__link--current::after {
+  &__link--current::after {
   content: "";
   background-color: var(--accent-text-color);
   bottom: -1px;
 }
 
- .menu__link--current:hover::after,
- .menu__link--current:focus::after {
+  &__link--current:hover::after,
+  &__link--current:focus::after {
   color: var(--bg-accent-col);
 }
 
-  .menu__link {
-    color: var(--link-text-menu);
-  }
   
-  .menu__link:hover,
-  .menu__link:focus {
+  
+  &__link:hover,
+  &__link:focus {
     color: var(--accent-text-color);
   }
 
-  
+}  

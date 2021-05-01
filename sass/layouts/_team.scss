@@ -1,44 +1,50 @@
  /* Team */
 
- .section--bg {
-    background-color: var(--section-bg-color);
-  }
+ .team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  
+  --grid-num: 4;
+  
 
-
-
-  .team__item {
+  &__item {
     
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
   }
   
-  .team__item:nth-child(4n) {
+  &__item:nth-child(4n) {
     margin-right: 0px;
   }
   
-  .team-list .team {
-    font-weight: 400;
+    
+  &__name {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-  }
-  
-  .team__name {
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    
     margin-bottom: 10px;
     font-size: inherit;
     font-weight: 500;
+    
+    color: var(--title-text-color);
   }
   
-  .team__position {
+  &__position {
+    font-size: 16px;
+    line-height: 1.18;    
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+
     color: var(--primery-text-color);
   }
-  
-  .team {
-    --grid-num: 4;
-  }
+    
 
-  .team__card {
+  &__card {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -49,17 +55,10 @@
     margin-left: 32px;
     margin-right: 32px;
   }
-   .team__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-  }
-  
-   .team__position {
-    font-size: 16px;
-    line-height: 1.18;    
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
+
+    
+}  
+
+  .section--bg {
+    background-color: var(--section-bg-color);
   }

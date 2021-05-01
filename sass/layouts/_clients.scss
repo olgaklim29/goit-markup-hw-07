@@ -3,21 +3,19 @@
 .clients {
     justify-content: center;
     align-items: center;
-  }
-  
-  .clients {
     --grid-num: 6;
-  }
-  
-  .clients__item {
+    
+    
+  &__item {
    
     height: 90px;
   }
   
-  .clients__item:nth-child(6n) {
+  &__item:nth-child(6n) {
     margin-right: 0px;
   }
-  .clients__link {
+  
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +30,14 @@
     transition: border-color var(--animation), fill var(--animation);
   }
   
-  .clients__icon {
-    transition: fill var(--animation);
-  } 
-  
-  .clients__link:hover,
-  .clients__link:focus {
+    
+  &__link:hover,
+  &__link:focus {
     border: 1px solid var(--accent-text-color);
     fill: var(--accent-text-color);
   }
+  
+  &__icon {
+    transition: fill var(--animation);
+  } 
+}

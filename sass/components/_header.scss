@@ -1,18 +1,19 @@
 .header {
-    border-bottom: 1px solid #ececec;
-  }
+    border-bottom: 1px solid var(--header-bottom-border);
+  
        
   
-  .header__container {
+  &__container {
     display: flex;
     align-items: center;
   }
 
-  .header__navigation {
+  &__navigation {
     display: flex;
     margin-left: 93px;
   }
 
-  .header .list {
+  &__list {
     display: flex;
   }
+}

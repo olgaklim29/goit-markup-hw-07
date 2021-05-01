@@ -1,19 +1,19 @@
 .social  {
     display: flex;
     justify-content: space-between;
-  }
   
-  .social__item {
+  
+  &__item {
     width: calc((100% - 30px) / 4);
     margin-right: 10px;
     height: 44px;
   }
   
-  .social__item:nth-child(4n) {
+  &__item:nth-child(4n) {
     margin-right: 0;
   }
   
-  .social__link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     transition: background-color var(--animation);
 }
 
- .social__icon {
+  &__icon {
    width: 20px;
    height: 20px;
    
@@ -35,8 +35,9 @@
   
   }
 
-  .social__link:hover,
-  .social__link:focus {
+  &__link:hover,
+  &__link:focus {
     background: var(--accent-text-color);
     fill: var(--white-color);
   }
+}

@@ -6,39 +6,39 @@
     
     display: flex;
     margin-left: auto;
-  }
+  
 
     
-  .contact-nav__link {
+    &__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color var(--animation);
-  }
-  
-  
-  
-  .contact-nav__item + .contact-nav__item {
-    margin-left: 50px;
-  }
-
-  .contact-nav__link {
-    display: flex;
-    align-items: center;
     
   }
   
-  .contact-nav__icon {
+  &__link:hover,
+  &__link:focus{
+    color: var(--accent-text-color);
+    transition: color var(--animation);
+  }
+  
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  
+  
+  &__icon {
    
     margin-right: 10px;
     fill: currentColor;
     transition: fill var(--animation);
   
-     
+  }   
   
-  .contact-nav__link:hover  &,
-  .contact-nav__link:focus  & {
+  &__link:hover  &,
+  &__link:focus  & {
     fill: var(--accent-text-color);
   }
   

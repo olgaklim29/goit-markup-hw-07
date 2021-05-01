@@ -22,9 +22,9 @@
     &:focus {
     background-color: var(--bg-accent-col);
   }
-}  
+  
 
-  .button__footer {
+   &__footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -36,19 +36,16 @@
   
     transition: background-color var(--animation);
   
-  
-   &:hover,
-   &:focus {
-    background-color: var(--bg-accent-col);
   }
- } 
+     
  
-  .button__icon {
+  &__icon {
     fill: currentColor;
     margin-left: 10px;
   }
 
-  .button__form {
+  &__form {
     display: block;
     margin: auto;
   }
+}

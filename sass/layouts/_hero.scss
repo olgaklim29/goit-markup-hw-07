@@ -19,10 +19,10 @@
     background-position: center;
     background-size: cover;
 
-  }
   
   
-  .hero__title {
+  
+    &__title {
     margin-top: 0px;
     margin-right: auto;
     margin-left: auto;
@@ -39,4 +39,4 @@
     color: #ffffff;
   }
   
-  
+}  

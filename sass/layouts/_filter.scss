@@ -1,44 +1,31 @@
 /* Service */
 
 
-
 .filter {
     display: flex;
     justify-content: center;
     margin: auto;
     min-width: 611px;
     margin-bottom: 50px;
-  
+    
+
+  &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
   }
-  
-  .filter__item {
+
+  &__item {
     margin-right: 8px;
   }
   
-  .filter__item:nth-child(5n) {
+  &__item:nth-child(5n) {
     margin-right: 0px;
   }
   
-  
-  
-  
-  
-  .filter-products .list-products {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  
-  }
-  
-  .filter-products .list-products:nth-child(3n) {
-    margin-right: 0px;
-  }
-  .filter-products .list-products:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-
-}
-
-.filter__button {
+     
+  &__button {
     border-style: none;
     border: 0px solid #f5f4fa;
     font-family: inherit;
@@ -55,9 +42,11 @@
   
     transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
   }
-  .filter__button:hover,
-  .filter__button:focus {
+
+  &__button:hover,
+  &__button:focus {
     color: var(--white-color);
     background-color: var(--accent-text-color);
     box-shadow: var(--button-shadow);
   }
+}
